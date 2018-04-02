@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180327 16:35:09.195" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/hshahid/code/workspace/RFpom/tests/hagr.robot" id="s1" name="Hagr">
+<test id="s1-t1" name="Place an Order">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180327 16:35:09.299" level="FAIL">Variable '${BROWSER}' not found.</msg>
+<status status="FAIL" endtime="20180327 16:35:09.299" starttime="20180327 16:35:09.298"></status>
+</kw>
+<status status="FAIL" endtime="20180327 16:35:09.299" starttime="20180327 16:35:09.298"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180327 16:35:11.301" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180327 16:35:11.301" starttime="20180327 16:35:09.299"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180327 16:35:11.302" starttime="20180327 16:35:11.302"></status>
+</kw>
+<status status="PASS" endtime="20180327 16:35:11.302" starttime="20180327 16:35:09.299"></status>
+</kw>
+<doc>User needs to login to place an order</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20180327 16:35:11.302" critical="yes" starttime="20180327 16:35:09.296">Setup failed:
+Variable '${BROWSER}' not found.</status>
+</test>
+<doc>Some basic info man</doc>
+<status status="FAIL" endtime="20180327 16:35:11.304" starttime="20180327 16:35:09.199"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Smoke</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Hagr" pass="0">Hagr</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180327 16:35:09.199" level="ERROR">Error in file '/Users/hshahid/code/workspace/RFpom/tests/hagr.robot': Setting variable '$ { BROWSER }' failed: Invalid variable name '$ { BROWSER }'.</msg>
+<msg timestamp="20180327 16:35:09.200" level="ERROR">Error in file '/Users/hshahid/code/workspace/RFpom/tests/hagr.robot': Setting variable '$ { START_URL }' failed: Invalid variable name '$ { START_URL }'.</msg>
+<msg timestamp="20180327 16:35:09.292" level="ERROR">Error in file '/Users/hshahid/code/workspace/RFpom/Resources/PO/HomePage.robot': Setting variable '$ { ACCESS_PASS }' failed: Invalid variable name '$ { ACCESS_PASS }'.</msg>
+</errors>
+</robot>

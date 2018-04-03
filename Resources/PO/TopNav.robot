@@ -21,5 +21,6 @@ Input and Search
     sleep  1s
     press key  ${TOPNAV_SEARCHBAR}  ${ASCII_ENTERKEY}
     wait until page contains  ${search_text}
+    sleep  1s
     click element  xpath=//*[@id="isp_search_results_container"]/li[1]/div[2]/a/div
     sleep  1s

@@ -6,7 +6,7 @@ ${COLORVARIANT-2} =  xpath=//*[@id="SingleOptionSelector-Colour"]/div[2]/label
 ${SIZINGGUIDE_CLOSE} =  xpath=//*[@id="fit-chart"]/button
 ${WAIST-5} =  xpath=//*[@id="SingleOptionSelector-Waist"]/div[5]
 ${INSEAM-2} =  xpath=//*[@id="SingleOptionSelector-Inseam"]/div[2]
-${SIDECART_CHECKOUT} =   xpath=//*[@id="minicart"]/div/div[3]/a
+${SIDECART_CHECKOUT} =  xpath=//*[@id="minicart"]/div/div[3]/a   #xpath=//*[@id="minicart"]/div/div[3]/a
 ${QTYFIELD} =  name=quantity
 
 
@@ -40,5 +40,5 @@ Add to Bag
     sleep  1s
 
 Proceed to Checkout
-    click link  ${SIDECART_CHECKOUT}
+    click element  ${SIDECART_CHECKOUT}
     wait until page contains  Shopping Bag

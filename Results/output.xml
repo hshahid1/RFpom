@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20180403 11:48:56.549" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<robot generated="20180403 12:33:59.113" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
 <suite source="/Users/hshahid/code/workspace/RFpom/tests/hagr.robot" id="s1" name="Hagr">
 <test id="s1-t1" name="Place an Order">
 <kw type="setup" name="Begin Web Test" library="Common">
@@ -9,10 +9,10 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180403 11:48:56.651" level="INFO">Opening browser 'firefox' to base url 'about:blank'</msg>
-<status status="PASS" endtime="20180403 11:48:59.286" starttime="20180403 11:48:56.651"></status>
+<msg timestamp="20180403 12:33:59.225" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180403 12:34:00.886" starttime="20180403 12:33:59.225"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:48:59.286" starttime="20180403 11:48:56.651"></status>
+<status status="PASS" endtime="20180403 12:34:00.886" starttime="20180403 12:33:59.225"></status>
 </kw>
 <kw name="Open Home Page" library="Hagr">
 <kw name="Load" library="HomePage">
@@ -21,8 +21,8 @@
 <arguments>
 <arg>${START_URL}</arg>
 </arguments>
-<msg timestamp="20180403 11:48:59.288" level="INFO">Opening url 'https://haggar.ca'</msg>
-<status status="PASS" endtime="20180403 11:49:03.454" starttime="20180403 11:48:59.288"></status>
+<msg timestamp="20180403 12:34:00.888" level="INFO">Opening url 'https://haggar.ca'</msg>
+<status status="PASS" endtime="20180403 12:34:02.580" starttime="20180403 12:34:00.888"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -30,22 +30,22 @@
 <arg>${SITE_PASSWORDFIELD}</arg>
 <arg>${ACCESS_PASS}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:03.456" level="INFO">Typing password into text field 'xpath=//*[@id="login_form"]/div[2]/div/input'</msg>
-<status status="PASS" endtime="20180403 11:49:03.491" starttime="20180403 11:49:03.455"></status>
+<msg timestamp="20180403 12:34:02.581" level="INFO">Typing password into text field 'xpath=//*[@id="login_form"]/div[2]/div/input'</msg>
+<status status="PASS" endtime="20180403 12:34:02.665" starttime="20180403 12:34:02.580"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${SITE_ENTER}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:03.492" level="INFO">Clicking button 'xpath=//*[@id="login_form"]/div[3]/input'.</msg>
-<status status="PASS" endtime="20180403 11:49:05.013" starttime="20180403 11:49:03.491"></status>
+<msg timestamp="20180403 12:34:02.665" level="INFO">Clicking button 'xpath=//*[@id="login_form"]/div[3]/input'.</msg>
+<status status="PASS" endtime="20180403 12:34:04.042" starttime="20180403 12:34:02.665"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180403 11:49:05.385" starttime="20180403 11:49:05.013"></status>
+<status status="PASS" endtime="20180403 12:34:04.495" starttime="20180403 12:34:04.043"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:05.385" starttime="20180403 11:48:59.287"></status>
+<status status="PASS" endtime="20180403 12:34:04.495" starttime="20180403 12:34:00.887"></status>
 </kw>
 <kw name="Verify Page Loaded" library="HomePage">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -53,11 +53,11 @@
 <arguments>
 <arg>${HAGR_LOGO}</arg>
 </arguments>
-<status status="PASS" endtime="20180403 11:49:05.422" starttime="20180403 11:49:05.386"></status>
+<status status="PASS" endtime="20180403 12:34:04.515" starttime="20180403 12:34:04.496"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:05.423" starttime="20180403 11:49:05.385"></status>
+<status status="PASS" endtime="20180403 12:34:04.516" starttime="20180403 12:34:04.496"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:05.423" starttime="20180403 11:48:59.287"></status>
+<status status="PASS" endtime="20180403 12:34:04.516" starttime="20180403 12:34:00.887"></status>
 </kw>
 <kw name="Close Sign Up Popup" library="Common">
 <kw name="Click Link" library="Selenium2Library">
@@ -65,10 +65,10 @@
 <arguments>
 <arg>${SIGNUP_POPUP_CLOSE}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:05.424" level="INFO">Clicking link 'xpath=//*[@id="shopify-section-footer-newsletter-mobile"]/div/div[1]/a'.</msg>
-<status status="PASS" endtime="20180403 11:49:05.465" starttime="20180403 11:49:05.423"></status>
+<msg timestamp="20180403 12:34:04.517" level="INFO">Clicking link 'xpath=//*[@id="shopify-section-footer-newsletter-mobile"]/div/div[1]/a'.</msg>
+<status status="PASS" endtime="20180403 12:34:04.590" starttime="20180403 12:34:04.517"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:05.465" starttime="20180403 11:49:05.423"></status>
+<status status="PASS" endtime="20180403 12:34:04.590" starttime="20180403 12:34:04.516"></status>
 </kw>
 <kw name="Search a Product" library="Hagr">
 <kw name="Input and Search" library="TopNav">
@@ -77,8 +77,8 @@
 <arguments>
 <arg>${TOPNAV_SEARCHICON}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:05.467" level="INFO">Clicking element 'xpath=//*[@id="shopify-section-header"]/header/div[2]/div[1]/div[3]/div[1]/i[1]'.</msg>
-<status status="PASS" endtime="20180403 11:49:05.689" starttime="20180403 11:49:05.466"></status>
+<msg timestamp="20180403 12:34:04.591" level="INFO">Clicking element 'xpath=//*[@id="shopify-section-header"]/header/div[2]/div[1]/div[3]/div[1]/i[1]'.</msg>
+<status status="PASS" endtime="20180403 12:34:04.656" starttime="20180403 12:34:04.591"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -86,16 +86,16 @@
 <arg>${TOPNAV_SEARCHBAR}</arg>
 <arg>${search_text}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:05.690" level="INFO">Typing text 'Premium No Iron Khaki' into text field 'name=q'</msg>
-<status status="PASS" endtime="20180403 11:49:05.736" starttime="20180403 11:49:05.689"></status>
+<msg timestamp="20180403 12:34:04.656" level="INFO">Typing text 'Premium No Iron Khaki' into text field 'name=q'</msg>
+<status status="PASS" endtime="20180403 12:34:04.860" starttime="20180403 12:34:04.656"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:06.737" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:06.737" starttime="20180403 11:49:05.736"></status>
+<msg timestamp="20180403 12:34:05.861" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:05.862" starttime="20180403 12:34:04.860"></status>
 </kw>
 <kw name="Press Key" library="Selenium2Library">
 <doc>Simulates user pressing key on element identified by `locator`.</doc>
@@ -103,42 +103,42 @@
 <arg>${TOPNAV_SEARCHBAR}</arg>
 <arg>${ASCII_ENTERKEY}</arg>
 </arguments>
-<status status="PASS" endtime="20180403 11:49:06.770" starttime="20180403 11:49:06.737"></status>
+<status status="PASS" endtime="20180403 12:34:07.041" starttime="20180403 12:34:05.862"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>${search_text}</arg>
 </arguments>
-<status status="PASS" endtime="20180403 11:49:07.722" starttime="20180403 11:49:06.771"></status>
+<status status="PASS" endtime="20180403 12:34:07.073" starttime="20180403 12:34:07.041"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:08.724" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:08.725" starttime="20180403 11:49:07.723"></status>
+<msg timestamp="20180403 12:34:08.075" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:08.075" starttime="20180403 12:34:07.073"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//*[@id="isp_search_results_container"]/li[1]/div[2]/a/div</arg>
 </arguments>
-<msg timestamp="20180403 11:49:08.725" level="INFO">Clicking element 'xpath=//*[@id="isp_search_results_container"]/li[1]/div[2]/a/div'.</msg>
-<status status="PASS" endtime="20180403 11:49:11.857" starttime="20180403 11:49:08.725"></status>
+<msg timestamp="20180403 12:34:08.076" level="INFO">Clicking element 'xpath=//*[@id="isp_search_results_container"]/li[1]/div[2]/a/div'.</msg>
+<status status="PASS" endtime="20180403 12:34:11.643" starttime="20180403 12:34:08.075"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:12.858" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:12.859" starttime="20180403 11:49:11.857"></status>
+<msg timestamp="20180403 12:34:12.646" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:12.646" starttime="20180403 12:34:11.643"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:12.859" starttime="20180403 11:49:05.466"></status>
+<status status="PASS" endtime="20180403 12:34:12.646" starttime="20180403 12:34:04.590"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:12.859" starttime="20180403 11:49:05.465"></status>
+<status status="PASS" endtime="20180403 12:34:12.646" starttime="20180403 12:34:04.590"></status>
 </kw>
 <kw name="Specify Product Specs" library="Hagr">
 <kw name="Select Color" library="ProductPage">
@@ -147,18 +147,18 @@
 <arguments>
 <arg>${COLORVARIANT-2}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:12.861" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Colour"]/div[2]/label'.</msg>
-<status status="PASS" endtime="20180403 11:49:13.136" starttime="20180403 11:49:12.861"></status>
+<msg timestamp="20180403 12:34:12.648" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Colour"]/div[2]/label'.</msg>
+<status status="PASS" endtime="20180403 12:34:12.711" starttime="20180403 12:34:12.648"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:14.138" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:14.138" starttime="20180403 11:49:13.136"></status>
+<msg timestamp="20180403 12:34:13.712" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:13.712" starttime="20180403 12:34:12.711"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:14.139" starttime="20180403 11:49:12.860"></status>
+<status status="PASS" endtime="20180403 12:34:13.713" starttime="20180403 12:34:12.647"></status>
 </kw>
 <kw name="Open Sizing Guide and explore sizes" library="ProductPage">
 <kw name="Click Link" library="Selenium2Library">
@@ -166,18 +166,18 @@
 <arguments>
 <arg>Sizing Guide</arg>
 </arguments>
-<msg timestamp="20180403 11:49:14.140" level="INFO">Clicking link 'Sizing Guide'.</msg>
-<status status="PASS" endtime="20180403 11:49:14.390" starttime="20180403 11:49:14.139"></status>
+<msg timestamp="20180403 12:34:13.714" level="INFO">Clicking link 'Sizing Guide'.</msg>
+<status status="PASS" endtime="20180403 12:34:13.792" starttime="20180403 12:34:13.713"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
 <arg>Men's Tops</arg>
 </arguments>
-<msg timestamp="20180403 11:49:14.390" level="INFO">Clicking link 'Men's Tops'.</msg>
-<status status="PASS" endtime="20180403 11:49:14.621" starttime="20180403 11:49:14.390"></status>
+<msg timestamp="20180403 12:34:13.793" level="INFO">Clicking link 'Men's Tops'.</msg>
+<status status="PASS" endtime="20180403 12:34:13.859" starttime="20180403 12:34:13.792"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:14.621" starttime="20180403 11:49:14.139"></status>
+<status status="PASS" endtime="20180403 12:34:13.859" starttime="20180403 12:34:13.713"></status>
 </kw>
 <kw name="Close Sizing Guide" library="ProductPage">
 <kw name="Click Button" library="Selenium2Library">
@@ -185,18 +185,18 @@
 <arguments>
 <arg>${SIZINGGUIDE_CLOSE}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:14.622" level="INFO">Clicking button 'xpath=//*[@id="fit-chart"]/button'.</msg>
-<status status="PASS" endtime="20180403 11:49:14.872" starttime="20180403 11:49:14.622"></status>
+<msg timestamp="20180403 12:34:13.860" level="INFO">Clicking button 'xpath=//*[@id="fit-chart"]/button'.</msg>
+<status status="PASS" endtime="20180403 12:34:13.926" starttime="20180403 12:34:13.860"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:15.873" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:15.873" starttime="20180403 11:49:14.872"></status>
+<msg timestamp="20180403 12:34:14.927" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:14.928" starttime="20180403 12:34:13.926"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:15.873" starttime="20180403 11:49:14.621"></status>
+<status status="PASS" endtime="20180403 12:34:14.928" starttime="20180403 12:34:13.859"></status>
 </kw>
 <kw name="Select Waist" library="ProductPage">
 <kw name="Click Element" library="Selenium2Library">
@@ -204,18 +204,18 @@
 <arguments>
 <arg>${WAIST-5}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:15.874" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Waist"]/div[5]'.</msg>
-<status status="PASS" endtime="20180403 11:49:16.102" starttime="20180403 11:49:15.874"></status>
+<msg timestamp="20180403 12:34:14.929" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Waist"]/div[5]'.</msg>
+<status status="PASS" endtime="20180403 12:34:14.983" starttime="20180403 12:34:14.929"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:17.106" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:17.106" starttime="20180403 11:49:16.103"></status>
+<msg timestamp="20180403 12:34:15.986" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:15.986" starttime="20180403 12:34:14.984"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:17.106" starttime="20180403 11:49:15.874"></status>
+<status status="PASS" endtime="20180403 12:34:15.987" starttime="20180403 12:34:14.928"></status>
 </kw>
 <kw name="Select Inseam" library="ProductPage">
 <kw name="Click Element" library="Selenium2Library">
@@ -223,18 +223,18 @@
 <arguments>
 <arg>${INSEAM-2}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:17.108" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Inseam"]/div[2]'.</msg>
-<status status="PASS" endtime="20180403 11:49:17.333" starttime="20180403 11:49:17.107"></status>
+<msg timestamp="20180403 12:34:15.988" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Inseam"]/div[2]'.</msg>
+<status status="PASS" endtime="20180403 12:34:16.043" starttime="20180403 12:34:15.987"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:18.334" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:18.335" starttime="20180403 11:49:17.333"></status>
+<msg timestamp="20180403 12:34:17.044" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:17.044" starttime="20180403 12:34:16.043"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:18.335" starttime="20180403 11:49:17.107"></status>
+<status status="PASS" endtime="20180403 12:34:17.044" starttime="20180403 12:34:15.987"></status>
 </kw>
 <kw name="Specify Quantity" library="ProductPage">
 <kw name="Input Text" library="Selenium2Library">
@@ -243,12 +243,12 @@
 <arg>${QTYFIELD}</arg>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20180403 11:49:18.336" level="INFO">Typing text '2' into text field 'name=quantity'</msg>
-<status status="PASS" endtime="20180403 11:49:18.361" starttime="20180403 11:49:18.336"></status>
+<msg timestamp="20180403 12:34:17.046" level="INFO">Typing text '2' into text field 'name=quantity'</msg>
+<status status="PASS" endtime="20180403 12:34:17.111" starttime="20180403 12:34:17.045"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:18.361" starttime="20180403 11:49:18.335"></status>
+<status status="PASS" endtime="20180403 12:34:17.112" starttime="20180403 12:34:17.045"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:18.361" starttime="20180403 11:49:12.860"></status>
+<status status="PASS" endtime="20180403 12:34:17.112" starttime="20180403 12:34:12.647"></status>
 </kw>
 <kw name="Add to Bag and Checkout" library="Hagr">
 <kw name="Add to Bag" library="ProductPage">
@@ -257,18 +257,18 @@
 <arguments>
 <arg>name=add</arg>
 </arguments>
-<msg timestamp="20180403 11:49:18.362" level="INFO">Clicking button 'name=add'.</msg>
-<status status="PASS" endtime="20180403 11:49:18.604" starttime="20180403 11:49:18.362"></status>
+<msg timestamp="20180403 12:34:17.113" level="INFO">Clicking button 'name=add'.</msg>
+<status status="PASS" endtime="20180403 12:34:17.179" starttime="20180403 12:34:17.112"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:19.605" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20180403 11:49:19.605" starttime="20180403 11:49:18.604"></status>
+<msg timestamp="20180403 12:34:18.181" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:34:18.181" starttime="20180403 12:34:17.179"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:19.605" starttime="20180403 11:49:18.362"></status>
+<status status="PASS" endtime="20180403 12:34:18.181" starttime="20180403 12:34:17.112"></status>
 </kw>
 <kw name="Proceed to Checkout" library="ProductPage">
 <kw name="Click Link" library="Selenium2Library">
@@ -276,19 +276,19 @@
 <arguments>
 <arg>${SIDECART_CHECKOUT}</arg>
 </arguments>
-<msg timestamp="20180403 11:49:19.606" level="INFO">Clicking link 'Checkout'.</msg>
-<status status="PASS" endtime="20180403 11:49:20.662" starttime="20180403 11:49:19.606"></status>
+<msg timestamp="20180403 12:34:18.183" level="INFO">Clicking link 'Checkout'.</msg>
+<status status="PASS" endtime="20180403 12:34:19.137" starttime="20180403 12:34:18.182"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Shopping Bag</arg>
 </arguments>
-<status status="PASS" endtime="20180403 11:49:20.684" starttime="20180403 11:49:20.662"></status>
+<status status="PASS" endtime="20180403 12:34:19.168" starttime="20180403 12:34:19.137"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:20.684" starttime="20180403 11:49:19.605"></status>
+<status status="PASS" endtime="20180403 12:34:19.169" starttime="20180403 12:34:18.182"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:20.684" starttime="20180403 11:49:18.361"></status>
+<status status="PASS" endtime="20180403 12:34:19.169" starttime="20180403 12:34:17.112"></status>
 </kw>
 <kw type="teardown" name="End Web Test" library="Common">
 <kw name="Sleep" library="BuiltIn">
@@ -296,23 +296,23 @@
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20180403 11:49:22.687" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20180403 11:49:22.687" starttime="20180403 11:49:20.685"></status>
+<msg timestamp="20180403 12:34:21.170" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180403 12:34:21.170" starttime="20180403 12:34:19.169"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180403 11:49:22.839" starttime="20180403 11:49:22.688"></status>
+<status status="PASS" endtime="20180403 12:34:21.257" starttime="20180403 12:34:21.170"></status>
 </kw>
-<status status="PASS" endtime="20180403 11:49:22.839" starttime="20180403 11:49:20.684"></status>
+<status status="PASS" endtime="20180403 12:34:21.257" starttime="20180403 12:34:19.169"></status>
 </kw>
 <doc>User needs to login to place an order</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20180403 11:49:22.839" critical="yes" starttime="20180403 11:48:56.650"></status>
+<status status="PASS" endtime="20180403 12:34:21.257" critical="yes" starttime="20180403 12:33:59.224"></status>
 </test>
 <doc>Some basic info man</doc>
-<status status="PASS" endtime="20180403 11:49:22.841" starttime="20180403 11:48:56.552"></status>
+<status status="PASS" endtime="20180403 12:34:21.259" starttime="20180403 12:33:59.115"></status>
 </suite>
 <statistics>
 <total>

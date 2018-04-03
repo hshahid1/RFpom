@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180403 12:53:15.876" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/hshahid/code/workspace/RFpom/tests/hagr.robot" id="s1" name="Hagr">
+<test id="s1-t1" name="Place an Order">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:15.976" level="INFO">Opening browser 'firefox' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20180403 12:53:18.565" starttime="20180403 12:53:15.976"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:18.566" starttime="20180403 12:53:15.976"></status>
+</kw>
+<kw name="Open Home Page" library="Hagr">
+<kw name="Load" library="HomePage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${START_URL}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:18.567" level="INFO">Opening url 'https://haggar.ca'</msg>
+<status status="PASS" endtime="20180403 12:53:24.266" starttime="20180403 12:53:18.567"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${SITE_PASSWORDFIELD}</arg>
+<arg>${ACCESS_PASS}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:24.267" level="INFO">Typing password into text field 'xpath=//*[@id="login_form"]/div[2]/div/input'</msg>
+<status status="PASS" endtime="20180403 12:53:24.306" starttime="20180403 12:53:24.266"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${SITE_ENTER}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:24.307" level="INFO">Clicking button 'xpath=//*[@id="login_form"]/div[3]/input'.</msg>
+<status status="PASS" endtime="20180403 12:53:25.731" starttime="20180403 12:53:24.306"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180403 12:53:26.296" starttime="20180403 12:53:25.731"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:26.297" starttime="20180403 12:53:18.567"></status>
+</kw>
+<kw name="Verify Page Loaded" library="HomePage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${HAGR_LOGO}</arg>
+</arguments>
+<status status="PASS" endtime="20180403 12:53:26.334" starttime="20180403 12:53:26.298"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:26.334" starttime="20180403 12:53:26.297"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:26.334" starttime="20180403 12:53:18.566"></status>
+</kw>
+<kw name="Close Sign Up Popup" library="Common">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${SIGNUP_POPUP_CLOSE}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:26.335" level="INFO">Clicking link 'xpath=//*[@id="shopify-section-footer-newsletter-mobile"]/div/div[1]/a'.</msg>
+<status status="PASS" endtime="20180403 12:53:26.393" starttime="20180403 12:53:26.335"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:26.393" starttime="20180403 12:53:26.335"></status>
+</kw>
+<kw name="Search a Product" library="Hagr">
+<kw name="Input and Search" library="TopNav">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${TOPNAV_SEARCHICON}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:26.395" level="INFO">Clicking element 'xpath=//*[@id="shopify-section-header"]/header/div[2]/div[1]/div[3]/div[1]/i[1]'.</msg>
+<status status="PASS" endtime="20180403 12:53:26.667" starttime="20180403 12:53:26.394"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TOPNAV_SEARCHBAR}</arg>
+<arg>${search_text}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:26.668" level="INFO">Typing text 'Premium No Iron Khaki' into text field 'name=q'</msg>
+<status status="PASS" endtime="20180403 12:53:26.723" starttime="20180403 12:53:26.667"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:27.725" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:27.725" starttime="20180403 12:53:26.724"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>${TOPNAV_SEARCHBAR}</arg>
+<arg>${ASCII_ENTERKEY}</arg>
+</arguments>
+<status status="PASS" endtime="20180403 12:53:27.758" starttime="20180403 12:53:27.726"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${search_text}</arg>
+</arguments>
+<status status="PASS" endtime="20180403 12:53:28.482" starttime="20180403 12:53:27.758"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:29.485" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:29.485" starttime="20180403 12:53:28.483"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="isp_search_results_container"]/li[1]/div[2]/a/div</arg>
+</arguments>
+<msg timestamp="20180403 12:53:29.486" level="INFO">Clicking element 'xpath=//*[@id="isp_search_results_container"]/li[1]/div[2]/a/div'.</msg>
+<status status="PASS" endtime="20180403 12:53:32.297" starttime="20180403 12:53:29.485"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:33.299" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:33.299" starttime="20180403 12:53:32.297"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:33.299" starttime="20180403 12:53:26.394"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:33.300" starttime="20180403 12:53:26.393"></status>
+</kw>
+<kw name="Specify Product Specs" library="Hagr">
+<kw name="Select Color" library="ProductPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${COLORVARIANT-2}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:33.301" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Colour"]/div[2]/label'.</msg>
+<status status="PASS" endtime="20180403 12:53:33.569" starttime="20180403 12:53:33.301"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:34.572" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:34.573" starttime="20180403 12:53:33.569"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:34.573" starttime="20180403 12:53:33.300"></status>
+</kw>
+<kw name="Open Sizing Guide and explore sizes" library="ProductPage">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>Sizing Guide</arg>
+</arguments>
+<msg timestamp="20180403 12:53:34.574" level="INFO">Clicking link 'Sizing Guide'.</msg>
+<status status="PASS" endtime="20180403 12:53:34.822" starttime="20180403 12:53:34.574"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>Men's Tops</arg>
+</arguments>
+<msg timestamp="20180403 12:53:34.823" level="INFO">Clicking link 'Men's Tops'.</msg>
+<status status="PASS" endtime="20180403 12:53:35.055" starttime="20180403 12:53:34.822"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:35.055" starttime="20180403 12:53:34.573"></status>
+</kw>
+<kw name="Close Sizing Guide" library="ProductPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${SIZINGGUIDE_CLOSE}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:35.057" level="INFO">Clicking button 'xpath=//*[@id="fit-chart"]/button'.</msg>
+<status status="PASS" endtime="20180403 12:53:35.306" starttime="20180403 12:53:35.056"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:36.309" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:36.310" starttime="20180403 12:53:35.306"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:36.310" starttime="20180403 12:53:35.056"></status>
+</kw>
+<kw name="Select Waist" library="ProductPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${WAIST-5}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:36.311" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Waist"]/div[5]'.</msg>
+<status status="PASS" endtime="20180403 12:53:36.598" starttime="20180403 12:53:36.311"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:37.602" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:37.602" starttime="20180403 12:53:36.598"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:37.602" starttime="20180403 12:53:36.310"></status>
+</kw>
+<kw name="Select Inseam" library="ProductPage">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${INSEAM-2}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:37.603" level="INFO">Clicking element 'xpath=//*[@id="SingleOptionSelector-Inseam"]/div[2]'.</msg>
+<status status="PASS" endtime="20180403 12:53:37.848" starttime="20180403 12:53:37.603"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:38.849" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:38.850" starttime="20180403 12:53:37.849"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:38.850" starttime="20180403 12:53:37.602"></status>
+</kw>
+<kw name="Specify Quantity" library="ProductPage">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${QTYFIELD}</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180403 12:53:38.851" level="INFO">Typing text '2' into text field 'name=quantity'</msg>
+<status status="PASS" endtime="20180403 12:53:38.876" starttime="20180403 12:53:38.851"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:38.876" starttime="20180403 12:53:38.850"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:38.876" starttime="20180403 12:53:33.300"></status>
+</kw>
+<kw name="Add to Bag and Checkout" library="Hagr">
+<kw name="Add to Bag" library="ProductPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=add</arg>
+</arguments>
+<msg timestamp="20180403 12:53:38.877" level="INFO">Clicking button 'name=add'.</msg>
+<status status="PASS" endtime="20180403 12:53:39.125" starttime="20180403 12:53:38.877"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:40.126" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180403 12:53:40.127" starttime="20180403 12:53:39.126"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:40.127" starttime="20180403 12:53:38.877"></status>
+</kw>
+<kw name="Proceed to Checkout" library="ProductPage">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${SIDECART_CHECKOUT}</arg>
+</arguments>
+<msg timestamp="20180403 12:53:40.127" level="INFO">Clicking link 'xpath=//*[@id="minicart"]/div/div[3]/a'.</msg>
+<status status="PASS" endtime="20180403 12:53:41.304" starttime="20180403 12:53:40.127"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Shopping Bag</arg>
+</arguments>
+<status status="PASS" endtime="20180403 12:53:41.332" starttime="20180403 12:53:41.304"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:41.333" starttime="20180403 12:53:40.127"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:41.333" starttime="20180403 12:53:38.877"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20180403 12:53:43.336" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180403 12:53:43.336" starttime="20180403 12:53:41.335"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180403 12:53:43.580" starttime="20180403 12:53:43.337"></status>
+</kw>
+<status status="PASS" endtime="20180403 12:53:43.580" starttime="20180403 12:53:41.334"></status>
+</kw>
+<doc>User needs to login to place an order</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20180403 12:53:43.580" critical="yes" starttime="20180403 12:53:15.975"></status>
+</test>
+<doc>Some basic info man</doc>
+<status status="PASS" endtime="20180403 12:53:43.582" starttime="20180403 12:53:15.879"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Hagr" pass="1">Hagr</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

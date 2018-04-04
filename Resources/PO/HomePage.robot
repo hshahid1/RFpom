@@ -2,7 +2,7 @@
 Library  Selenium2Library
 
 *** Variables ***
-${ACCESS_PASS} =  owreot
+${ACCESS_PASS} =  PASS
 ${SITE_PASSWORDFIELD} =  xpath=//*[@id="login_form"]/div[2]/div/input
 ${SITE_ENTER} =  xpath=//*[@id="login_form"]/div[3]/input
 ${HAGR_LOGO} =  xpath=//*[@id="shopify-section-header"]/header/div[2]/div[1]/div[2]/a/img

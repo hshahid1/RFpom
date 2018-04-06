@@ -2,6 +2,8 @@
 Documentation  Some basic info man
 Resource  ../Resources/Hagr.robot
 Resource  ../Resources/Common.robot
+Resource  ../Resources/PO/CustomerInformation.robot
+Resource  ../Resources/PO/ShippingMethod.robot
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
@@ -19,3 +21,6 @@ Place an Order
     Hagr.Search a Product
     Hagr.Specify Product Specs
     Hagr.Add to Bag and Checkout
+    CustomerInformation.Fill Customer Info and Continue to Shipping Method
+    ShippingMethod.Specify Shipping Method and Continue to Payment Method
+

@@ -4,6 +4,7 @@ Documentation  Self created keywords
 Resource  ../Resources/PO/HomePage.robot
 Resource  ../Resources/PO/TopNav.robot
 Resource  ../Resources/PO/ProductPage.robot
+Resource  ../Resources/PO/Cart.robot
 
 *** Keywords ***
 Open Home Page
@@ -24,3 +25,4 @@ Specify Product Specs
 Add to Bag and Checkout
     ProductPage.Add to Bag
     ProductPage.Proceed to Checkout
+    Cart.Checkout from Cart

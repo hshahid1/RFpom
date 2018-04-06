@@ -40,5 +40,6 @@ Add to Bag
     sleep  1s
 
 Proceed to Checkout
+    sleep  1s
     click element  ${SIDECART_CHECKOUT}
     wait until page contains  Shopping Bag
